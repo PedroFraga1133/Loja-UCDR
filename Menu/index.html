@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> UseCordeRosa - Seja bem-vindo! </title>
+
+                     <!-- links CSS-->
+    <link rel="stylesheet" href="../Menu/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../Menu/CSS/fontawesome.css">
+    <link rel="stylesheet" href="../Menu/CSS/Folha.css">
+    <link rel="stylesheet" href="../Menu/CSS/animate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../Menu/CSS/responsivo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css">
+</head>
+
+<body>
+
+        <!-- aria de alerta-->
+        <button onclick="alert()">Alerta</button>
+
+        <script>
+            function alert(){
+                Swal.fire({
+                     icon: "warning",
+                    title: "Projeto apenas demonstrativo",
+                    text: "Esse site se trata de um projeto demonstrativo, a loja não está em funcionamento!",
+                    footer: '<a href="#"></a>'
+                 });
+            }
+        </script>
+
+
+        <div class="container-mensagens" id="container-mensagens">
+        </div>
+
+    <a class="botao-carrinho animated bounceIn hidden" onclick="cardapio.metodos.abrirCarrinho(true)">
+        <div class="badge-total-carrinho">0</div>
+        <i class="bi bi-bag-heart-fill"></i>
+
+    </a>
+
+ <section class="header">
+                <div class="container"></div>
+                        <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
+                            <a class="navbar-brand wow fadeIn"  href="#">
+                                <img src="./img/logo1.png" width="100" class="img.logo">
+                            </a>
+
+
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                            data-target="#navbarNavDropdown">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fas fa-bars"></i>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav ml-auto mr-auto wow fadeIn">
+                                    <li class="nav-item">
+                                        <a href="#servicos" class="nav-link
+                                        "><b>Serviços</b></a></li>
+                                    <li class="nav-item">
+                                        <a href="#cardapio" class="nav-link"><b>Catálogo</b></a></li>
+                                    <li class="nav-item" >
+                                        <a href="#depoimentos" class="nav-link"><b>Depoimentos</b></a></li>
+                                    <li class="nav-item">
+                                        <a href="#reservas" class="nav-link
+                                        "><b>Consultoria</b></a></li>
+
+                                </ul>
+                            
+
+                            
+                            <a class="btn btn-white btn-icon wow fadeIn" onclick="cardapio.metodos.abrirCarrinho(true)">
+                                Minha Sacolinha <span class="icon">
+                                    <div class="container-total-carrinho badge-total-carrinho hidden">0</div>
+                                    <i class="bi bi-bag-heart-fill"></i>
+                                </span>
+                            </a>
+                        </div>
+                        </nav>
+                    
+        </section>
+
+        
+
+ <section class="banner">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-one">
+                            <div class="d-flex text-banner">
+            <h1 class="wow fadeInLeft"><b>Estilo é ser autêntica e criar a sua <b class="color-primary">Moda.</b></b></h1>
+    <p class="wow fadeInLeft delay-02s">
+            Aproveite nossa loja on-line! Realce sua beleza com nossas bolsas e viva uma experiência <b class="color-primary">CordeRosa.</b>
+    </p>
+                        <div class="wow fadeInLeft delay-05s">
+                            <a href="#cardapio"" class="btn btn-yellow mt-4 mr-3">
+                                Ver Catálogo
+                            </a>
+                            <a href="#" class="btn btn-white btn-icon-left mt-4" id="btnLigar">
+                                <span class="icon-left">
+                                    <i class="icons-rs fa fa-phone"></i>
+                                </span>
+                                (81) 97777-7777
+                            </a>
+                            <br>
+                            <a class="icons-rs btn btn-sm btn-white btn-social mt-4 mr-3
+                            " href="https://www.instagram.com/usecorderosa/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <a class="icons-rs btn btn-sm btn-white btn-social mt-4 mr-3 
+                            " href="https://www.tiktok.com/@usecorderosa" target="_blank">
+                            <i class="bi bi-tiktok"></i>
+                            <a class="icons-rs btn btn-sm btn-white btn-social mt-4 mr-3
+                            " href="https://m.facebook.com/profile.php/?id=100064311212608&name=xhp_nt__fb__action__open_user" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                            </div>
+                           
+                        </div>
+                        <div class="col-6 no-mobile">
+                            <div class="card-banner wow fadeIn delay-02s"></div>
+                            <div class="d-flex img-banner wow fadeIn delay-05s">
+                                <img src="./img/bolsa1.png" alt="">
+                            </div>
+                            <div class="card card-case wow fadeInRight delay-07s">
+                                "Eu ameiiiii a minha bolsa! Comprei <br>para uso próprio, 
+                                a qualidade é impecável. <br>Atendimento excelente... 
+                                já quero fazer coleção!"
+                                <span class="card-case-name">
+                                    <b>Laysie Amarantes</b>
+                                    </span>
+                                    </div>
+                        </div>
+                        </div>
+                    </div>
+                
+            
+</section>
+
+
+
+
+<section class="servicos" id="servicos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-one text-center mb-5 wow fadeIn delay-02s">
+                        <span class="hint-title"><b>Serviços</b></span>
+                        <h1 class="title"><b>Todo momento pensado para você!</b></h1>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-12 col-one md-5 wow fadeInUp">
+                        <div class="card-icon text-center">
+                            <img src="./img/icone-online.png" width="210">
+                        </div>
+                        <div class="card-text text-center mt-3">
+                            <p><b>Compre onde quiser</b></p>
+                            <span>Pedidos e consultoria totalmente on-line e com muita praticidade!</span>
+                        </div>
+                    </div>
+
+
+                     <div class="col-12 col-lg-4 col-md-4 col-sm-12 col-one md-5 wow fadeInUp">
+                        <div class="card-icon text-center">
+                            <img src="./img/icone-entrega.png" width="205">
+                        </div>
+                        <div class="card-text text-center mt-3">
+                            <p><b>Entrega em casa</b></p>
+                            <span>Receba qualidade e estilo na seguraça e conforto do seu lar.</span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-12 col-one md-5 wow fadeInUp">
+                        <div class="card-icon text-center">
+                            <img src="./img/icone-exp.png" width="240">
+                        </div>
+                        <div class="card-text text-center mt-3">
+                            <p><b>Experiências incríveis</b></p>
+                            <span>Viva uma experiência única e personalizada especialmente para você!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+</section>
+
+    
+
+
+<section class="cardapio" id="cardapio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <span class="hint-title"><b>Nosso Catálogo</b></span>
+                        <h1 class="title"><b>Faça seu estilo!</b></h1>
+                    </div>
+
+                    
+
+                    <div class="col-12 container-menu wow fadeInUp">
+                        <a id="menu-classico" class=" btn btn-white btn-sm mr-5 ml-1 active" onclick="cardapio.metodos.obterItensCardapio('classico')">
+                            <span class="fa-spin material-icons">local_florist</span>&nbsp; Clássico
+                        </a>
+                        <a id="menu-elegante" class=" btn btn-white btn-sm mr-5 ml-1" onclick="cardapio.metodos.obterItensCardapio('elegante')">
+                            <span class="fa-spin material-icons">local_florist</span>&nbsp; Elegante
+                        </a>
+                        <a id="menu-romantico" class=" btn btn-white btn-sm mr-4 ml-1" onclick="cardapio.metodos.obterItensCardapio('romantico')">
+                            <span class="fa-spin material-icons">local_florist</span>&nbsp; Romântico
+                        </a>
+                        <a  id="menu-sensual" class=" btn btn-white btn-sm mr-5 ml-1" onclick="cardapio.metodos.obterItensCardapio('sensual')">
+                            <span class="fa-spin material-icons">local_florist</span>&nbsp; Sensual
+                        </a>
+                        <a id="menu-criativo" class=" btn btn-white btn-sm mr-5 ml-2" onclick="cardapio.metodos.obterItensCardapio('criativo')">
+                            <span class="fa-spin material-icons">local_florist</span>&nbsp; Criativo
+                        </a>
+                        <a id="menu-moderno" class=" btn btn-white btn-sm mr-4 ml-1" onclick="cardapio.metodos.obterItensCardapio('moderno')">
+                            <span class="fa-spin material-icons">local_florist</span>&nbsp; Moderno
+                        </a>
+                     </div>
+                     <div class="col-12 col-one">
+                        <div class="row" id="itensCardapio">
+
+                      
+
+
+
+                        </div>
+                     </div>
+
+                     <!-- BOTAO DE VER MAIS (SOMENTE ADD DE OS ITENS DO CATALOGO FOREM MAIS QUE 8 'O PADRÃO')
+
+                     <div class="col-12 col-one text-center wow fadeInUp">
+                        <a id="btnVerMais" class="btn btn-white btn-sm" onclick="cardapio.metodos.verMais()">
+                            Ver mais
+                        </a>
+
+                     </div>
+
+                     -->
+                     
+
+
+                </div>
+            </div>
+ </section>
+
+
+
+
+        <section class="depoimentos" id="depoimentos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 no-mobile text-center">
+                        <div class="card-depoimentos wow fadeIn delay-02s"></div>
+                        <div class="d-flex img-banner-depoimentos wow fadeInLeft delay-02s">
+                            <img src="./img/camelia.dupla.png" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-7 col-md-7 col-sm-12 col-one">
+                        <span class="hint-titel wow fadeIn delay-02s"><b>Depoimentos</b></span>
+                        <h1 class="title wow fadeIn delay-02s">
+                            <b>o que dizem sobre nós?</b>
+                        </h1>
+                        <div class="mb-5">
+
+                            <div class="depoimento wow fadeIn delay-02s" id="depoimento-1">
+                                <div class="container-dados-depoimento">
+                                    <div class="imagem-depoimento"></div>
+                                        <div>
+                                            <p class="nome-depoimento"><b>Gabriel Souza</b></p>
+                                            <p class="nota-depoimento">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>&nbsp;  <span>4.5</span>
+
+
+
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                        <p class="texto-depoimento">
+                                            <i class="fas fa-quote-left"></i>
+                                            <span>
+                                                Comprei para dar de presente pra minha mãe, e ela adorou! 
+                                                <br>Atendimento maneiro e a embalagem surpreendeu a todos! 
+                                                <br>Parabéns a toda equipe.
+                                            </span>
+                                            <i class="fas fa-quote-right"></i>
+                                        </p>
+                                    </div>
+
+                                    <div class="depoimento animated fadeIn delay-02s hidden" id="depoimento-2">
+                                        <div class="container-dados-depoimento">
+                                            <div class="imagem-depoimento"></div>
+                                                <div>
+                                                    <p class="nome-depoimento"><b>Alice Figueiras</b></p>
+                                                    <p class="nota-depoimento">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i></i>&nbsp;  <span>5.0</span>
+        
+        
+        
+                                                    </p>
+                                                </div>
+                                                
+                                            </div>
+                                                <p class="texto-depoimento">
+                                                    <i class="fas fa-quote-left"></i>
+                                                    <span>
+                                                        "Quando vi a embalagem e a bolsa com meu nome, 
+                                                        <br>eu surteeeiii! muito lindo, cada detalhe. Voltarei a comprar mais vezes, 
+                                                        <br>com certeza. Qualidade de outro mundo.
+                                                    </span>
+                                                    <i class="fas fa-quote-right"></i>
+                                                </p>
+                                            </div>
+
+                                            <div class="depoimento animated fadeIn delay-02s hidden" id="depoimento-3">
+                                                <div class="container-dados-depoimento">
+                                                    <div class="imagem-depoimento"></div>
+                                                        <div>
+                                                            <p class="nome-depoimento"><b>Lucas Amaral</b></p>
+                                                            <p class="nota-depoimento">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>&nbsp;  <span>4.0</span>
+                
+                
+                
+                                                            </p>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                        <p class="texto-depoimento">
+                                                            <i class="fas fa-quote-left"></i>
+                                    <span>
+                                        Minha namorada amou o presente dela. Amou a embalagem, 
+                                        <br>amou a qualidade e eu gostei bastante de todo suporte que tive na hora da compra. 
+                                        <br>Sucesso, galera! Só achei um pouco demorado o prezo de entrega devido o dia dos namorados.
+                                    </span>
+                                                <i class="fas fa-quote-right"></i>
+                                            </p>
+                                      </div>
+
+                                      </div>
+
+                                      
+                     <a id="btnDepoimento-1" class="btn btn-sm btn-white btn-social mr-3 active" onclick="cardapio.metodos.abrirDepoimento(1)">1</a>
+                     <a id="btnDepoimento-2" class="btn btn-sm btn-white btn-social mr-3" onclick="cardapio.metodos.abrirDepoimento(2)">2</a>
+                     <a id="btnDepoimento-3" class="btn btn-sm btn-white btn-social" onclick="cardapio.metodos.abrirDepoimento(3)">3</a>
+
+                                
+
+                            
+                        
+                    </div>
+       </div>
+   </div>
+        </section>
+        
+
+
+
+        <section class="reserva" id="reservas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-secondary wow fadeInUp">
+                            <div class="row">
+
+                                <div class="col-12 col-lg-7 col-md-7 col-sm-12 col-one">
+                                    <span class="hint-title"><b>Consultoria</b></span>
+                                    <h1 class="title"><b>Ficou em dúvida? <br>
+                                         Como e onde usar e arrasar com a sua <br>
+                                         bolsa nova?</b></h1>
+                                    <p class="pr-5">
+                                        Às vezes o conselho de uma amiga faz toda a diferença!
+                                        <br>
+                                        Consulte nossa equipe que vamos ter o prezer de te ajudar.
+                                    </p>
+                                    <a class="btn btn-yellow mb-4 wow fadeIn delay-07s " href="#" id="btnConsulta" target="_blank">
+                                        Fale Conosco
+                                    </a>
+
+
+
+                                </div>
+
+                                <div class="col-5 no-mobile">
+                                    <div class="card-reserva"></div>
+                                    <div class="d-flex img-banner">
+                                        <img src="./img/icone-consu.png">
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-one container-logo-footer wow flipOutY">
+                        <img class="logo-footer" src="./img/Fraga-logo.png">
+
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-one container-texto-footer">
+                        <p class="mb-0">
+                            <b>Use CordeRosa On-line</b> _by Pedro Fraga &copy; Todos os direitos reservados
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-one container-redes-footer wow flipOutY">
+                    
+                        <a class="icons-rs btn btn-sm btn-white btn-social mr-3
+                            " href="https://www.linkedin.com/in/pedro-fraga-ab85b1257/" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                            <a class="icons-rs btn btn-sm btn-white btn-social mr-3
+                            " href="#" id="btnContatowpp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+        
+
+        <div class="modal-full animated fadeIn hidden" id="modalCarrinho">
+
+            <div class="m-header">
+                <div class="container">
+                    <a class="btn btn-white btn-sm float-right" onclick="cardapio.metodos.abrirCarrinho(false)">
+                        Fechar
+                    </a>
+                    <div class="etapas">
+                        <div class="etapa etapa1 active">1</div>
+                        <div class="etapa etapa2">2</div>
+                        <div class="etapa etapa3">3</div>
+                    </div>
+                    <p class="title-carrinho mt-4">
+                        <b id="lblTituloEtapa">Sua Sacolinha</b>
+
+                    </p>
+                
+                        
+
+                    
+                    
+                </div>
+            </div>
+            <div class="m-body">
+                <div class="container">
+                    
+                    <div id="itensCarrinho" class="row mr-0 ml-0 animated fadeIn hidden"></div>
+
+                    <div id="localEntrega" class="row mr-0 ml-0 animated fadeIn hidden">
+
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                            <div class="form-group container-cep">
+                                <label>CEP:</label>
+                                <input id="txtCEP" type="text" class="form-control">
+                                <a class="btn btn-yellow btn-sm" onclick="cardapio.metodos.buscarCep()">
+                                    <i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-8 no-mobile"></div>
+
+
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Endereço:</label>
+                                <input id="txtEndereco" type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label>Bairro:</label>
+                                <input id="txtBairro" type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-2 col-md-2 col-sm-12">
+                            <div class="form-group">
+                                <label>Número:</label>
+                                <input id="txtNumero" type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Cidade:</label>
+                                <input id="txtCidade" type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label>Complemento:</label>
+                                <input id="txtComplemento" type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-2 col-md-2 col-sm-12">
+                            <div class="form-group">
+                                <label>UF:</label>
+                                <select id="ddlUf" class="form-control">
+                                    <option value="-1">...</option>
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AP">AP</option>
+                                    <option value="AM">AM</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MT">MT</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MG">MG</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PR">PR</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SP">SP</option>
+                                    <option value="SE">SE</option>
+                                    <option value="TO">TO</option>
+                                </select>    
+                            </div>
+                        </div>
+
+
+
+                        
+                    </div>
+
+                    <div id="resumoCarrinho" class="row mr-0 ml-0 animated fadeIn hidden">
+                        <div class="col-12">
+                            <p class="title-carrinho mt-4">
+                                <b>Resumo do meu pedido:</b>
+                            </p>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row" id="listaItensResumo">
+
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <p class="title-carrinho mt-4">
+                                <b>Local da entrega:</b>
+                            </p>
+                        </div>
+
+                        <div class="col-12 item-carrinho resumo">
+                            <div class="img-map">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="dados-produto">
+                                <p class="texto-endereco">
+                                    <b id="resumoEndereco">Rua teste, 200, bairro teste</b>
+                                </p>
+                                <p class="cidade-endereco" id="cidadeEndereco">
+                                    Cidade-PE / 53413-180
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="m-footer">
+                <div class="container">
+                    <div class="container-total text-right mb-4">
+                        <p class="texto-SubTotal mb-0">
+                            <span>Subtotal:</span>
+                            <span id="lblSubTotal">R$ 0,00</span>
+                        </p>
+                        <p class="mb-0 texto-entrega">
+                            <span><i class="fas fa-motorcycle"></i>&nbsp; Entrega:</span>
+                            <span id="lblValorEntrega">+ R$0,00</span>
+                        </p>
+                        <p class="mb-0 texto-total">
+                            <span><b>Total:</b></span>
+                            <span class="valor-total"><b id="lblValorTotal">R$ 0,00</b></span>
+                        </p>
+                    </div>
+
+                    <a onclick="cardapio.metodos.carregarEndereco()" class="btn btn-yellow float-right" id="btnEtapaPedido">
+                        Continuar
+                    </a>
+                    <a onclick="cardapio.metodos.resumoPedido()" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">
+                        Revisar pedido
+                    </a>
+                    <a class="btn btn-yellow float-right hidden" id="btnEtapaResumo" target="_blank">
+                        Enviar pedido
+                    </a>
+                    <a onclick="cardapio.metodos.voltarEtapa()" class="btn btn-white float-right mr-3 hidden" id="btnVoltar">
+                        Voltar
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+                            <!-- links JavaScript-->
+
+            <script type="text/javascript" src="../Menu/JS/jquery-1.12.4.min.js"></script>
+            <script type="text/javascript" src="../Menu/JS/modernizr-3.5.0.min.js"></script>
+            <script type="text/javascript" src="../Menu/JS/bootstrap.min.js"></script>
+            <script type="text/javascript" src="../Menu/JS/popper.min.js"></script>
+            <script type="text/javascript" src="../Menu/JS/wow.min.js"></script>
+            <script type="text/javascript" src="../Menu/JS/dados.js"></script>
+            <script type="text/javascript" src="../Menu/JS/app.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js"></script>
+
+            <script>new WOW().init();</script>
+
+</body>
+
+</html>
